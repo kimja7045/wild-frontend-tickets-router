@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import HomePage from "./pages/HomePage";
 import TicketsPage from "./pages/TicketsPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import TicketDetailPage from "./pages/TicketDetailPage";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ export default function App() {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/tickets" element={<TicketsPage />} />
+              <Route path="/tickets/:ticketId" element={<TicketDetailPage />} />
               <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </main>
