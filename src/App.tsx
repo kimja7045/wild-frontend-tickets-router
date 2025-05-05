@@ -1,9 +1,8 @@
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
-import Header from './Header';
-import Main from './Main';
+import Header from "./components/Header";
 
 const queryClient = new QueryClient();
 
@@ -12,7 +11,7 @@ export default function App() {
     <QueryClientProvider client={queryClient}>
       <div>
         <Header />
-        <Main />
+        <main></main>
       </div>
       <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
